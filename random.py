@@ -168,3 +168,32 @@ a
 b = [5,4,3,2,1]
 sorted(b)
 b
+
+##
+s = 'nitina'
+print(s == s[::-1])
+temp = s[2:3]
+temp
+temp.upper()
+temp
+
+##
+text1 = 'MZJAWXU' #7
+text2 = 'XMJYAUZTR'
+
+dp_row = [0 for _ in range(len(text2)+1)]
+dp_row
+dp = [dp_row for _ in range(len(text1)+1)]
+dp
+
+a = [0]*6
+a
+
+##
+a = 'abc'
+b = 'def'
+ans = []
+for a1 in a:
+    for b1 in b:
+        ans.append(a1+b1)
+ans
