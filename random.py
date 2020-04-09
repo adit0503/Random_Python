@@ -197,3 +197,21 @@ for a1 in a:
     for b1 in b:
         ans.append(a1+b1)
 ans
+
+##
+s = ['a','b','d']
+s
+a = ''
+for i in s:
+    a += i
+a
+a[-1]
+b='xywrrmu'
+b = b[:-1]
+b
+
+##
+n = '1234 5678'
+n = n.split()
+n1 = n[0]
+n1
