@@ -215,3 +215,104 @@ n = '1234 5678'
 n = n.split()
 n1 = n[0]
 n1
+
+##
+arr = [9,9,9]
+n = ''
+for a in arr:
+    n += str(a)
+new_n = int(n) + 1
+ans = []
+for a1 in str(new_n):
+    ans.append(a1)
+ans
+
+##
+a = 1000000007
+a
+
+##
+arr = [0,1,2,3,4,5]
+count = 0
+for i in range(6):
+    for j in range(6):
+        for k in range(6):
+            for l in range(6):
+                for m in range(6):
+                    for n in range(6):
+                        if i^j^k^l^m^n == 0:
+                            count += 1
+count
+1000000007
+
+##
+def perfectSquare(n):
+    arr = [i for i in range(50001)]
+    res = n ** 0.5
+    if res in arr:
+        return True
+    return False
+perfectSquare(9)
+
+arr = []
+
+a=[1,2]
+n,m = a
+n
+m
+
+##
+n = 100
+num = 0
+i = 1
+while(num < n):
+    for j in range(0, i):
+        num = (1 << i) + (1 << j) ##all numbers with 2 bits set
+        if (num <= n):
+            print(num)
+    i += 1
+
+a = 100
+b = a << 2
+b
+b = a << 3
+b
+
+##
+def lengthC(s):
+    i = 0
+    while(s[i] == 'C'):
+        i += 1
+    return i
+
+n = 1
+for _ in range(n):
+    st = "SSSSEEEECCCCEECCCCCCCCCSSSSEEECCCCSSSSSSSEEESSCCCCCCCSEESSSSCCCCCCSSEEEE"
+    maxC = 0
+    i = 0
+    while(i < len(st)):
+        if st[i] == "C":
+            l = lengthC(st[i:])
+            print(st[i:],l)
+            if l > maxC:
+                maxC = l
+            i += l
+        else:
+            i += 1
+    print(maxC)
+
+##
+#0 = left
+s = 'abcde'
+i = 1
+s = s[i:] + s[:i]
+s
+#1 = right
+t = 'abcde'
+i = 4
+t = t[-i:]+t[:-i]
+t
+
+##
+s = 'abcd'
+set(s)
